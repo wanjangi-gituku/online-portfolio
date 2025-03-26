@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="pt-30 md:pt-32 px-16 flex min-h-screen w-full items-centerpy-28 md:px-32"
+      className="pt-30 md:pt-32 px-16 flex min-h-screen w-full items-center py-28 md:px-32"
     >
       <div className="flex flex-col items-center justify-center gap-10 text-white">
         <motion.div
@@ -38,7 +38,7 @@ const Hero = () => {
             clean scalable applications. From front-end design to seamless
             database integration with MySQL and/or PostgreSQL; as well as NoSQL
             solutions such as MongoDB, I create efficient solutions for dynamic
-            user experiences. Let's build somethifn great together!
+            user experiences. Let's build something great together!
           </p>
         </motion.div>
       </div>
