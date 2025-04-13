@@ -13,11 +13,14 @@ const ProjectCard = ({
     <ScrollReveal>
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
         <div className="flex flex-col gap-5">
-          <img
-            src={image}
-            alt={title}
-            className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105"
-          />
+          <div className="relative w-[350px] h-[250px] overflow-hidden rounded-2xl">
+            <img
+              src={image}
+              alt={title}
+              className="absolute inset-0 w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+
           <div className="flex gap-2">
             <a
               href={githubLink}
@@ -43,7 +46,6 @@ const ProjectCard = ({
             <div className="text-xl font-semibold text-gray-50">{title}</div>
             <p className="text-gray-400">{description}</p>
           </div>
-
           <div className="flex flex-wrap gap-5">
             {technologies.map((tech, index) => (
               <span
