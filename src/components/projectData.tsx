@@ -1,6 +1,7 @@
 import goal from "/goal_management_app.png";
 import bulk from "/bulk_insert.png";
 import events from "/events_scraper.png";
+import appointment from "/appointment_scheduling_system.png";
 
 export type Projects = {
   image: string;
@@ -12,6 +13,16 @@ export type Projects = {
 };
 
 export const projectData: Projects[] = [
+  {
+    image: appointment,
+    title: "Appointment Scheduling System API",
+    description:
+      "A robust, secure backend service that efficiently manages patient data and enables seamless appointment scheduling with healthcare providers.",
+    technologies: ["FastAPI", "MySQL", "Redis", "Celery", "Docker"],
+    githubLink: "https://github.com/Ras-Pekt/appointment_scheduling_system",
+    liveDemoLink:
+      "https://appointmentschedulingsystem-production.up.railway.app/redoc",
+  },
   {
     image: goal,
     title: "Goals Management App",
